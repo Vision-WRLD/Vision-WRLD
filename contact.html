@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Vision WRLD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="bg-noise"></div>
+  <div class="page-glow"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="signal signal-one"></div>
+  <div class="signal signal-two"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-spacer" aria-hidden="true"></div>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html" class="">Home</a>
+        <a href="services.html" class="">Services</a>
+        <a href="process.html" class="">Process</a>
+        <a href="work.html" class="">Work</a>
+        <a href="about.html" class="">About</a>
+        <a href="contact.html" class="nav-cta active">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero section reveal">
+      <p class="eyebrow">Start your request</p>
+      <h1>Tell me what you need and I will help bring the vision to life.</h1>
+      <p>Choose the option that fits best, then use the custom section to explain your request in your own words.</p>
+    </section>
+
+    <section class="section contact-section">
+      <form id="contact-form" class="contact-form reveal">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="company">Company name</label>
+          <input type="text" id="company" name="company" placeholder="Business or company name" />
+        </div>
+
+        <div class="form-row">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="">Choose one</option>
+            <option value="New Website">New Website</option>
+            <option value="Website Redesign">Website Redesign</option>
+            <option value="Fix or Update Existing Website">Fix or Update Existing Website</option>
+            <option value="Help Understanding How Website Was Made">Help Understanding How Website Was Made</option>
+            <option value="Landing Page">Landing Page</option>
+            <option value="Multiple Page Website">Multiple Page Website</option>
+            <option value="Website Content and Layout Help">Website Content and Layout Help</option>
+            <option value="Business Website Consultation">Business Website Consultation</option>
+            <option value="Custom Request">Custom Request</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="budget">Budget range</label>
+          <select id="budget" name="budget">
+            <option value="">Choose one</option>
+            <option value="Not sure yet">Not sure yet</option>
+            <option value="$100 - $300">$100 - $300</option>
+            <option value="$300 - $600">$300 - $600</option>
+            <option value="$600+">$600+</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="timeline">Timeline</label>
+          <select id="timeline" name="timeline">
+            <option value="">Choose one</option>
+            <option value="As soon as possible">As soon as possible</option>
+            <option value="Within 1-2 weeks">Within 1-2 weeks</option>
+            <option value="Within a month">Within a month</option>
+            <option value="No rush">No rush</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Custom request/details</label>
+          <textarea id="details" name="details" rows="7" placeholder="Tell me what you need, what is not working, or what you want your website to feel like." required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary form-button">
+          <span class="button-text">Send Request</span>
+          <span class="button-loader"></span>
+        </button>
+
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-panel reveal delay">
+        <h2>Good details to include</h2>
+        <ul>
+          <li>What your company does</li>
+          <li>Whether you need a new site, redesign, or fix</li>
+          <li>Pages you want included</li>
+          <li>Style, colours, or examples you like</li>
+          <li>Any deadline or launch goal</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Vision WRLD. Bringing your vision to life.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
